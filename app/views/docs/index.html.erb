@@ -1,0 +1,12 @@
+<h1>Document title below with link!</h1>
+
+<ul>
+  <% @docs.each do |doc| %>
+    <li>
+      <%= link_to doc.title, doc %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "Create new", new_doc_path %>
+
+
